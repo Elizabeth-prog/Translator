@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap.min.css"/>
+    <title>Translator</title>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">TRANSLATOR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<form style="display: flex; align-items: center; flex-direction: column;" action="" method="post">
+    <p style='padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+        <label style='padding-right: 20px; padding-bottom: 20px;'>Set your language</label>
+        <input style='outline:none; height: 40px; weight: 100px; border-radius: 4px;' class='bg-dark text-white'
+               type="text" name="from" value="ru">
+    </p>
+    <p style='padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+        <label style='padding-right: 20px; padding-bottom: 20px;'>Set your language to translate</label>
+        <input style='outline:none; height: 40px; weight: 100px; border-radius: 4px;' class='bg-dark text-white'
+               type="text" name="to" value="en">
+    </p>
+    <p style='padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+        <label style='padding-right: 20px;  padding-bottom: 20px'> Enter your text: </label>
+        <input style='outline:none; height: 200px; width: 500px; weight: 100px; border-radius: 1px;'
+               class='bg-dark text-white' type="text" name="trans">
+    </p>
+    <p style="width: 100%; display: flex; justify-content: center;">
+        <input style='font-family: Arial; margin: 0 100px;' class="sub btn btn-primary bg-light text-dark"
+               type="submit">
+    </p>
+    <p style='padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+        <label style='padding-right: 20px;  padding-bottom: 20px'> Output label: </label>
+        <input style='outline:none; height: 200px; width: 500px; weight: 100px; border-radius: 1px;'
+               class='bg-dark text-white' value="{{my_string}}">
+    </p>
+</form>
+
+<p style='padding: 20px; display: flex; align-items: center; flex-direction: column;'>
+    <label style='padding-right: 20px;  padding-bottom: 20px;'> Output label: </label>
+    <output
+            class='bg-dark text-white' style='outline:none; height: 200px; width: 500px; weight: 100px; border-radius: 1px; display: flex; align-items: center; border: 2px dashed #f69c55;'>
+        <span>{{my_string}}</span>
+    </output>
+</p>
+
+</body>
+</html>
